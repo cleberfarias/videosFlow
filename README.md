@@ -24,4 +24,18 @@ Este projeto consome dados de uma API externa (você pode especificar aqui o nom
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/seu-usuario/seu-projeto.git
+   git clone https://github.com/cleberfarias/videosFlow.git
+2. Abra o arquivo \`index.html\` no navegador.
+
+> Nenhum servidor é necessário — basta abrir o arquivo HTML localmente para visualizar a aplicação em funcionamento.
+
+## 📚 Aprendizados
+
+- Como fazer requisições com \`fetch\`
+- Como tratar respostas e erros de APIs
+- Como atualizar dinamicamente a interface com dados externos
+
+## 📌 Observações
+
+Este é um projeto de aprendizado e pode evoluir com o tempo conforme novos conceitos forem estudados.
+" > README.md
