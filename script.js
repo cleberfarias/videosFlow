@@ -1,4 +1,4 @@
-const conatainerVideos = document.querySelector(".videos__container")
+const containerVideos = document.querySelector(".videos__container")
 
 const api = fetch("http://localhost:3000/videos")
 
@@ -6,7 +6,7 @@ const api = fetch("http://localhost:3000/videos")
 .then((videos)=>
     
         videos.forEach((video)=>{ //para cada video vai ser exibido // o innerHTML vai colocar os videos dentro do HTML - cada video vai ser acrescendo 
-            conatainerVideos.innerHTML += `
+            containerVideos.innerHTML += `
             <li class="videos__item">
              <iframe src="${video.url}" title="${video.titulo}" frameborder="0" allowfullscreen></iframe>
             <div class="descricao-video">
@@ -19,3 +19,6 @@ const api = fetch("http://localhost:3000/videos")
         })        
 
 )
+.catch((error)=>{
+    containerVideos.innerHTML =`<p> Houve um erro ao carregar o video: ${error}</p>`
+})
